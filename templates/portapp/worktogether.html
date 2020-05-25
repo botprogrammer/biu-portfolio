@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% block navbrand %}
+{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<body>
+
+    {% block contact %}
+    {% endblock %}
+
+<div class="container-fluid maindiv">
+    <div class="row" id="maindivrow">
+        <div class="col-md-6">
+            <h1>
+                <p class="maindiv-heading">That's Great!</p>
+            </h1>
+            <p class="lead maindiv-p">
+                    Looks like You've find my 
+                    <span><u><a href="{% url 'portapp:projects' %}">work</a></u></span>
+                    impressive. So without waiting anymore,  
+                    <span><u><a href="">let's start</a></u></span> 
+                    working on a Wholesome Project!
+            </p>
+        </div>
+        <div class="col-md-6 text-center wtvid">
+            <video autoplay loop muted id="myVideo">
+                <source src="../media/images/lwt5.mp4" type="video/mp4">
+            </video>   
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+
+  <!-- Contact Us Section -->
+<section class="Material-contact-section">
+      <div class="container">
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-12 text-center contactheader">
+                  <p class="section-title">Start Working Now!</p>
+              </div>
+          </div>
+          <div class="row lead sectionitems">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2">
+                <div class="col md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <video autoplay loop muted class="embed-responsive-item" src="../media/images/contact.mp4"></video>
+                    </div>
+                </div>
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6 contactform">
+                <form>
+                    <div class="form-row justify-content-center">
+                      <div class="form-group col-md-8">
+                        <label for="inputName">Your Name <b>:</b></label>
+                        <input type="email" class="form-control" id="inputName" placeholder="Name*">
+                      </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                      <div class="form-group col-md-8">
+                        <label for="inputEmail4">Email <b>:</b></label>
+                        <input type="password" class="form-control" id="inputEmail4" placeholder="Email*">
+                      </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                      <div class="form-group col-md-8">
+                      <label for="inputSkype">Skype <b>:</b></label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Skype Contact(Optional)">
+                      </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-8">
+                        <label for="exampleFormControlTextarea1">Message<b>:</b></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your thoughts here"></textarea>
+                        </div>
+                      </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-8">
+                            <button type="submit" class="btn btn-primary float-right">Send&nbsp;  
+                                <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+</section>
+</div>
+</body>
+
+<script type="text/javascript">
+</script>
+{% endblock %}

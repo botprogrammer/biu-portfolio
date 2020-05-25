@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% endblock %}
+
+
+{% block body %}
+{% block home %}
+{% endblock %}
+
+<body>
+
+<div class="container-fluid maincontainer row">
+    <div class="col-md-4 mainheader offset-md-1">
+        <h4>Hi, I'm Pranav.<span> I'm a developer, who holds experience with machine-learning and deep-learning.</span></h4>
+    </div>
+    <div class="col-md-7 headeranimation text-center">
+        <video class="ml-auto mr-auto" autoplay loop muted id="myVideo">
+            <source src="{% static '../media/images/mainvid.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="jumbotron secondarycontainer text-center">
+    <div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <h3><i class="fa fa-quote-left"></i>
+                    Computers are now able to see, hear and learn. Welcome to the future!
+                <i class="fa fa-quote-right"></i></h3>
+            <footer class="blockquote-footer">Dave Waters</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="container jumbotext text-center">
+          <p class="lead">As above quote says, machines are becoming smarter and smarter
+              day after day. Today, machine intelligence is taking over human intelligence. 
+              They are fast and capable enough to predict better outcomes than humans can.
+          </p>
+      </div>
+      <div class="row">
+          <div class="col-md-4 jumboimage">
+              <img src="/media/images/img1.png">
+          </div>
+          <div class="col-md-4 jumboimage">
+            <img src="/media/images/img2.png">
+          </div>
+          <div class="col-md-4 jumboimage">
+            <img src="/media/images/img3.png">
+        </div>
+      </div>
+      <div class="container jumbotext2 text-center">
+        <p class="lead">That is exactly what I am playing with so far. My interest lies in these kind of things, 
+            about giving your model an intelligence that mimics the human brain! You will find all this awesome stuff 
+            in <span><a href="/projects">Projects</a></span> section.
+        </p>
+    </div>
+</div>
+</body>
+
+
+{% endblock %}

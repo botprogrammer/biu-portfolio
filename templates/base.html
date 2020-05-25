@@ -1,0 +1,122 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body{
+    overflow-x: hidden;
+}
+
+.lead{
+  font-size: 1.1rem;
+}
+
+.navbar ul li{
+  margin-left: 2%;
+}
+
+.navbar .navbar-brand{
+  font-size: 1.8rem;
+  margin-left: 2%;
+}
+
+.navbar .navbar-nav{
+  margin-left: 2%;
+}
+
+.bg-light{
+  background-color: white!important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+  color: purple;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  transition-duration:0.5s;
+  color: black!important;
+  border-bottom: 1px solid black;
+}
+
+</style>
+
+{% block head %}
+{% endblock %}
+
+<!-- Navbar -->
+  <nav class="navbar navbar-light bg-light lead">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    
+      <div class="navbar-collapse">
+        <ul class="navbar-nav mr-auto animate__animated animate__fadeInLeft flex-row">
+          {% block home %}
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          {% endblock %}
+          {% block about %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'portapp:about' %}">About Me</a>
+          </li>
+          {% endblock %}
+          {% block projects %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'portapp:projects' %}">Projects</a>
+          </li>
+          {% endblock %}
+          {% block contact %}
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="{% url 'portapp:contact' %}">Let's Work Together!</a>
+          </li>
+          {% endblock %}
+        </ul>
+      </div>
+  </nav>
+
+<!-- navbaR -->
+
+{% block body %}
+{% endblock %}
+
+<footer class="bottomfooter">
+  <div class="d-flex bd-highlight">
+      <div class="mr-auto p-2 bd-highlight">
+          <p class="lead">Designed and created by, Pranav 2020</p>
+      </div>
+      <div class="p-2 bd-highlight">
+          <ul class="text-right">
+              <li class="list-inline-item">
+                  <a class="btn-primary" href="mailto:pranavgoswami0@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="btn-primary" href="https://www.facebook.com/pranavgoswami0/">
+                  <i class="fa fa-facebook-f"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class= "btn-primary" href="https://www.instagram.com/p03_goswami/">
+                  <i class="fa fa-instagram"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="btn-primary" href="https://github.com/botprogrammer">
+                      <i class="fa fa-github"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="btn-primary" href="https://www.linkedin.com/in/pranav-goswami-9b501b191/">
+                  <i class="fa fa-linkedin"></i>
+                  </a>
+              </li>
+              </ul>
+      </div>
+  </div>
+</footer>
