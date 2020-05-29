@@ -12,19 +12,13 @@
 }
 
 #myVideo{
-    max-width: 80%;
-    height: 80%;
+    margin-top: 110px;
+    width: 400px;
 }
 
 .mainheader h4 span{
     font-weight: lighter;
 }
-
-.headeranimation{
-    margin-top: 10%;
-    max-height: 280px;
-}
-
 .card{
     background-color: rgb(233, 236, 239);
     border: none;
@@ -70,10 +64,14 @@
 .projectpageheader h6{
     color: purple;
 }
-
-.carousel-item{
-    height: 240px;
-    width: 500px;
+.carousel-item img{
+    height: 220px;
+    width: 350px;
+}
+.carousel-inner{
+    margin-top: 20px;
+    height: 220px;
+    width: 350px;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -117,27 +115,18 @@
 
 .maindiv-heading{
     color: purple;
-    margin: 80px 0 0 80;
+    margin: 80px 0 0 110;
 }
 
 .maindiv-p{
     color: purple;
-    margin: 10 0 0 80;
+    margin: 10 0 0 110;
     width: 75%;
-}
-.wtvid video{
-    margin-right: 100px;
 }
 
 u{
     color: #007bff;
 }
-
-#myVideo{
-    max-width: 70%;
-    height: 100%;
-}
-
 .lead .contactmedia{
     width: 90%;
 }
@@ -157,7 +146,6 @@ section .sectionitems{
 
 .contactform{
     margin-left: auto;
-    margin-top: 50px;
 }
 
 form .btn{
@@ -213,6 +201,13 @@ form label{
     padding-top: 0!important;
     padding-bottom: 0!important;
 }
+.embed-responsive{
+    width: 400px;
+}
+#myContactVideo{
+    margin-top: 30px;
+    width: 260px;
+}
 
 
 @media (max-width: 925px){
@@ -221,9 +216,58 @@ form label{
         height: 200px;
         margin: 50px auto 0px auto;
     }
+    .embed-responsive{
+        width: 300px!important;
+    }
+    .form-control{
+        width: 110%;
+    }
+    .contactform button{
+        /* margin-left: 150px; */
+        float: right!important;
+    }
+    .mainheader{
+        margin-top: 170px;
+    }
+    #myVideo{
+        width: 300px;
+        margin-top: 150px;
+    }
+    .Material-contact-section{
+        margin-top: -50px;
+    }
+    #myContactVideo{
+        margin-top: 30px;
+        width: 240px;
+    }
+    .carousel-inner{
+        margin-top: 0;
+    }
+
+}
+@media (max-width: 860px){
+    .contactform button{
+        margin-left: 180px;
+        float: right!important;
+    }
+    .jumboimage{
+        margin-top: 0;
+    }
+    .jumboimage img{
+        width: 210px!important;
+        height: 180px;
+        margin: 50px auto 0px auto;
+    }
+    .offset-md-9{
+        margin-left: 70%;
+    }
+    #myContactVideo{
+        margin-top: 60px;
+        width: 220px;
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .maincontainer{
         background-color: rgb(247, 247, 247);
         text-align: center;
@@ -235,6 +279,11 @@ form label{
     .navbar-light .navbar-nav .nav-link{
         font-size: 1rem;
     }
+    .secondarydiv{
+        max-width: 100%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .mainheader{
         width: 75%;
         margin: auto;
@@ -243,7 +292,7 @@ form label{
         font-size: 1.4rem;
     }
     .headeranimation{
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .card i{
         font-size: 1.3rem;
@@ -258,20 +307,25 @@ form label{
         margin-top: 20px;
     }
     .jumbotext p{
-        font-size: 1.1rem;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
         margin-top: 0;
         width: 550px;
+    }
+    .jumboimage{
+        margin-top: -10px;
     }
     .jumbotext2{
         margin-top: 50px ;
     }
     .jumbotext2 p{
-        font-size: 1.2rem;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
         width: 550px;
     }
     .jumboimage img{
         width: 450px!important;
-        height: 350px;
+        height: 400px;
         margin: 50px auto 0px auto;
     }
     footer p{
@@ -300,7 +354,7 @@ form label{
         text-decoration-color: 1px solid purple;
     }
     .projectdescription{
-        width: 100%!important;
+        margin-top: -60px;
     }
     .projectpageheader h2{
         font-size: 1.7rem;
@@ -309,12 +363,16 @@ form label{
         font-size: 0.9rem;
     }
     .projectdescription h4{
+        margin-top: 30px;
         text-align: center;
         font-size: 1.3rem;
     }
     .projectdescription p{
         text-align: center;
         font-size: 0.9rem;
+    }
+    .offset-md-9{
+        margin-left: 0;
     }
     .seemore{
         text-align: center;
@@ -328,25 +386,35 @@ form label{
     .projectslide{
         margin-top: 100px;
     }
-    .newcolumn{
-        margin-top: -400px;
-    }
     .newprojectslide{
-        margin-top: 150px;
+        margin-top: 130px;
+    }
+    .newcolumn{
+        margin-top: -370px;
     }
     .pagination{
         margin-bottom: 50px;
     }
     .carousel{
         align-items: center;
-        width: 400px;
+        width: 300px;
         margin: 0 auto 0 auto;
     }
     .carousel-inner{
-        width: 400px;
+        width: 300px;
     }
-    #myvideo{
-        height: 300px;
+    .carousel-item{
+        width: 300px;
+    }
+    .carousel-item .d-block{
+        height: 200px;
+    }
+    .projectjumbo{
+        padding-bottom: 0;
+    }
+    #myVideo{
+        width: 370px;
+        margin-top: 0px;
     }
     .maindiv-heading{
         margin: 0;
@@ -355,26 +423,52 @@ form label{
     }
     .maindiv-p{
         margin: auto;
-        width: 80%;
+        width: 450px;
         text-align: center;
         font-size: 1.4rem;
-    }
-    .wtvid{
-        margin: 70px auto 50px 100px;
     }
     .contact-widget-section2{
         margin-bottom: 0;
     }
+    .contact-widget-section2 .contactvid .embed-responsive{
+        margin-top: 50px;        
+        width: 330px;
+    }
     .Material-contact-section{
-        margin-top: 250px;
+        margin-top: 330px;
     }
     section .sectionitems{
         margin-top: 0;
     }
+    .form-control{
+        width: 100%;
+    }
     .contactform button{
-        margin: 10px 200px auto auto;
+        margin-left: 300px;
+        float: left!important;
+    }
+    .embed-responsive{
+        width: 300px!important;
+        margin: auto auto 20px auto;
+    }
+    #myContactVideo{
+        margin-top: 90px;
+        width: 280px;
     }
 }
+@media (max-width: 660px){
+    .contactform button{
+        margin-left: 250px;
+        float: left!important;
+    }
+    #myVideo{
+        width: 370px;
+    }
+    #myContactVideo{
+        width: 260px;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 600px) {
     .maincontainer{
@@ -451,22 +545,23 @@ form label{
         height: 300px!important;
     }
     .projectslide{
-        margin-top: 100px;
+        margin-top: 70px;
+        margin-right: 50px;
+    }
+    .newprojectslide{
+        margin-right: 50px;
     }
     .pagination li a{
         font-size: 12px;
     }
-    .carousel{
-        align-items: center;
-        width: 350px;
-        margin: 0 auto 0 auto;
-    }
     .carousel-inner{
         width: 350px;
     }
-    #myvideo{
-        margin-top: 0px;
-        height: 290px;
+    .carousel-item{
+        width: 350px;
+    }
+    #myVideo{
+        width: 350px;
     }
     .maindiv-heading{
         margin: 0;
@@ -478,9 +573,6 @@ form label{
         width: 75%;
         text-align: center;
         font-size: 1.3rem;
-    }
-    .wtvid{
-        margin: 70px auto 50px 100px;
     }
     .contact-widget-section2{
         margin-bottom: 0;
@@ -502,32 +594,66 @@ form label{
         width: 80%;
         margin: auto
     }
+    .contactform{
+        margin-top: 50px;
+    }
     .contactform button{
-        margin: 10px 200px auto auto;
+        margin-left: 230px;
+        float: left!important;
+    }
+    #myContactVideo{
+        width: 260px;
     }
 } 
 @media (max-width: 575px){
+    .maincontainer{
+        height: 450px;
+    }
     .column{
         margin-top: 50px;
     }
     .newcolumn{
-        margin-top: -420px;
+        margin-top: -390px;
     }
     .newprojectslide{
-        margin-top: 170px;
+        margin-top: 180px;
+    }
+    .contactform button{
+        margin-left: 200px;
+        float: left!important;
+    }
+    .carousel{
+        width: 350px;
+    }
+    .carousel-inner{
+        width: 350px;
+    }
+    .carousel-item{
+        width: 350px;
+    }
+    #myVideo{
+        margin-top: 20px;
+        width: 300px;
+    }
+    #myContactVideo{
+        width: 240px;
+    }
+    .projectslide{
+        margin-right: 0px;
+    }
+    .newprojectslide{
+        margin-top: 200px;
+        margin-right: 0px;
     }
 }
 
 @media (max-width: 520px){
     .maincontainer{
-        height: 380px;
+        height: 440px;
     }
     .mainheader h4{
         margin-top: 30px;
         font-size: 1.2rem;
-    }
-    .headeranimation{
-        margin-top: 0;
     }
     .jumbotext p{
         font-size: 0.9rem;
@@ -561,9 +687,6 @@ form label{
         text-align: center;
         font-size: 1rem;
     }
-    .wtvid{
-        margin: 40px auto 0px 150px;
-    }
     .contact-widget-section2{
         margin-bottom: 0;
     }
@@ -571,7 +694,7 @@ form label{
         margin-top: 200px;
     }
     #myVideo{
-        max-width: 230px;
+        width: 290px;
     }
     .contact-widget-section2{
         width: 350px;
@@ -589,16 +712,16 @@ form label{
         margin-top: 70px;
     }
     .column{
-        margin-top: -10px;
+        margin-top: 70px;
     }
     .newcolumn{
-        margin-top: -420px;
+        margin-top: -390px;
     }
     .newprojectslide{
-        margin-top: 100px;
+        margin-top: 200px;
     }
-    .jumbotron .row{
-        margin-top: 20px;
+    .secondarycontainer .row{
+        margin-top: 0px;
     }
     form label{
         margin-left: 47px;
@@ -610,10 +733,21 @@ form label{
         font-size: 1.3rem;
     }
     .contactform button{
-        margin: 10px 160px auto auto;
+        margin-left: 180px;
+        float: left!important;
     }
     .contactheader p{
         font-size: 2.1rem;
+    }
+    .carousel-inner{
+        width: 300px;
+    }
+    .carousel-item img{
+        width: 300px;
+    }
+    #myContactVideo{
+        margin-top: 70px;
+        width: 220px;
     }
 }
 
@@ -630,11 +764,15 @@ form label{
     .maindiv-p{
         font-size: 1rem;
     }
+    .headeranimation{
+        height: 180px;
+        margin-top: 0;
+    }
     #myVideo{
-        max-width: 200px;
+        width: 260px;
     }
     .wtvid{
-        margin: 20px auto 0 130px;
+        margin: 20px auto 0 50px;
     }
     .contactform{
         margin-top: 10px;
@@ -643,30 +781,53 @@ form label{
         margin-left: 35px;
     }
     .column{
-        margin-top: -10px;
+        margin: 70px 20px auto auto;
     }
     .newcolumn{
-        margin-top: -420px;
+        margin-top: -410px;
     }
     .newprojectslide{
-        margin-top: 100px;
+        margin-top: 180px;
+    }
+    .seemore{
+        margin-left: 30px;
     }
     .jumbotext p{
-        width: 380px;
+        width: 350px;
         font-size: 1rem;
         line-height: 1.2rem;
     }
     .jumbotext2 p{
-        width: 380px;
+        width: 340px;
         font-size: 1rem;
         line-height: 1.2rem;
     }
     .jumbotron .row{
-        margin-top: 0px;
+        margin-top: 30px;
+    }
+    .embed-responsive{
+        width: 300px!important;
+    }
+    .contactform button{
+        margin-left: 150px;
+        float: left!important;
+    }
+    .carousel{
+        width: 300px;
+    }
+    .carousel-inner{
+        width: 300px;
+    }
+    #myContactVideo{
+        margin-top: 50px;
+        width: 200px;
     }
 }
 
 @media (max-width: 400px){
+    .maincontainer{
+        height: 380px;
+    }
     .navbar-light .navbar-nav .nav-link{
         margin-right: 10px;
     }
@@ -676,18 +837,25 @@ form label{
     .bottomfooter .bd-highlight{
         font-size: 0.2rem;
     }
+    .projectslide{
+        height: 180px;
+        margin-top: 50px;
+    }
     .jumbotext p{
         width: 320px;
         font-size: 0.9rem;
         line-height: 1.15rem;
     }
     .jumbotext2 p{
-        width: 320px;
+        width: 300px;
         font-size: 0.9rem;
         line-height: 1.15rem;
     }
     .jumbotron .row{
-        margin-top: 0px;
+        margin-top: 30px;
+    }
+    .projectdescription p{
+        line-height: 1.1rem;
     }
     .Material-contact-section{
         margin-top: 150px;
@@ -699,28 +867,32 @@ form label{
         font-size: 0.9rem;
         line-height: 1.2rem;
     }
+    .headeranimation{
+        height: 160px;
+        margin-top: 0;
+    }
     #myVideo{
-        max-width: 200px;
+        width: 230px;
     }
     .wtvid{
-        margin: 20px auto 0 100px;
+        margin: 20px auto 0 30px;
     }
     .carousel{
-        width: 290px;
-        height: 220px;
+        width: 250px;
+        height: 150px;
     }
     .carousel-inner{
-        width: 290px;
-        height: 220px;
+        width: 250px;
+        height: 150px;
     }
     .newprojectslide{
-        margin-top: 150px;
+        margin-top: 170px;
     }
     .column{
         margin-right: 20px;
     }
     .newcolumn{
-        margin-top: -450px;
+        margin-top: -330px;
         margin-right: 20px;
     }
     .contactform{
@@ -734,8 +906,25 @@ form label{
     form label{
         margin-left: 35px;
     }
+    .embed-responsive{
+        width: 270px!important;
+    }
+    .contactform button{
+        margin-left: 130px;
+        float: left!important;
+    }
+    #myContactVideo{
+        margin-top: 50px;
+        width: 180px;
+    }
 }
 @media (max-width: 360px){
+    .maincontainer{
+        height: 330px;
+    }
+    .mainheader h4{
+        font-size: 1rem;
+    }
     .navbar{
         padding: 0;
     }
@@ -753,6 +942,9 @@ form label{
         font-size: 0.7rem;
         line-height: 0.9rem;
     }
+    .projectjumbo{
+        height: 420px;
+    }
     .seemore{
         margin-top: -10px;
         margin-left: 40px;
@@ -765,14 +957,11 @@ form label{
         width: 250px;
         height: 180px;
     }
-    .carousel-item img{
-        width: 100%;
+    .carousel-item .d-block{
+        height: 160px;
     }
     .projectslide{
         margin-top: 50px;
-    }
-    .mainheader h4{
-        font-size: 1.1rem;
     }
     .headeranimation{
         margin-top: -50px;
@@ -780,6 +969,10 @@ form label{
     }
     .jumbotext{
         margin-top: 0;
+        margin-left: 15px;
+    }
+    .jumbotext2{
+        margin-left: 10px;
     }
     .jumbotext p{
         width: 270px;
@@ -796,7 +989,7 @@ form label{
         height: 210px;
     }
     .jumbotron .row{
-        margin-top: 0px;
+        margin-top: 30px;
     }
     .projectpageheader h2{
         font-size: 1.3rem;
@@ -804,7 +997,7 @@ form label{
     .projectpageheader h6{
         font-size: 0.8rem;
     }
-    .bottomfooter p{
+    .bottomfooter p{    
         font-size: 0.55rem;
     }
     .bottomfooter .bd-highlight{
@@ -828,11 +1021,15 @@ form label{
     .maindiv-p{
         font-size: 0.8rem;
     }
-    #myVideo{
-        max-width: 200px;
+    .headeranimation{
+        height: 140px;
+        margin-top: 0;
+    }
+    #myvideo{
+        width: 220px;
     }
     .wtvid{
-        margin: 20px auto 0 70px;
+        margin: 20px auto 0 40px;
     }
     .contactheader p{
         font-size: 1.7rem;
@@ -844,7 +1041,7 @@ form label{
         margin-top: 130px;
     }
     .embed-responsive{
-        width: 230px;
+        width: 250px!important;
         margin-bottom: 0;
     }
     form label{
@@ -854,16 +1051,66 @@ form label{
         margin-top: 50px;
     }
     .newcolumn{
-        margin-top: -330px;
+        margin-top: -300px;
     }
     .newprojectslide{
-        margin-top: 140px;
+        margin-top: 110px;
+    }
+    .contactform button{
+        margin-left: 110px;
+        float: left!important;
+    }
+    #myContactVideo{
+        margin-top: 50px;
+        width: 160px;
     }
 }
 @media (max-width: 340px){
+    
     .contactform button{
         height: 30px;
-        margin: 10px 85px auto auto;
+        margin-left: 90px;
+        float: left!important;
         padding-top: 3.5px;
+    }
+    .secondarydiv{
+        padding-right: 0;
+    }
+    #myVideo{
+        max-width: 200px;
+    }
+    .wtvid{
+        margin-top: -20px;
+    }
+    .Material-contact-section{
+        margin-top: 90px;
+    }
+    .embed-responsive{
+        width: 220px!important;
+    }
+    .carousel{
+        width: 220px;
+        height: 140px;
+    }
+    .carousel-item{
+        width: 220px;
+        height: 140px;
+    }
+    .carousel-inner{
+        width: 220px;
+        height: 140px;
+    }
+    .newcolumn{
+        margin-top: -260px;
+    }
+    .newprojectslide{
+        margin-top: 110px;
+    }
+    .jumbotext p{
+        width: 240px;
+    }
+    #myContactVideo{
+        margin-top: 80px;
+        width: 150px;
     }
 }

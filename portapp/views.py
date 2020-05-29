@@ -10,5 +10,8 @@ class AboutView(TemplateView):
 class ProjectsView(TemplateView):
     template_name = "portapp/projects.html"
 
+class ProjectsDetailView(TemplateView):
+    template_name = "portapp/projects.html"
+
 class ContactView(TemplateView):
     template_name = "portapp/worktogether.html"

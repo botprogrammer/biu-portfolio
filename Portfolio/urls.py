@@ -3,6 +3,6 @@ from django.urls import path, include
 import portapp
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin-only-biu/', admin.site.urls),
     path('', include('portapp.urls')),
 ]
