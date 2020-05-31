@@ -64,14 +64,17 @@
 .projectpageheader h6{
     color: purple;
 }
+.carousel{
+    width: 400px;
+}
 .carousel-item img{
     height: 220px;
-    width: 350px;
+    width: 400px;
 }
 .carousel-inner{
     margin-top: 20px;
     height: 220px;
-    width: 350px;
+    width:400px;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -209,7 +212,6 @@ form label{
     width: 260px;
 }
 
-
 @media (max-width: 925px){
     .jumboimage img{
         width: 250px!important;
@@ -240,8 +242,17 @@ form label{
         margin-top: 30px;
         width: 240px;
     }
+    .carousel{
+        width: 350px;
+    }
+    .carousel-item img{
+        height: 220px;
+        width: 350px;
+    }
     .carousel-inner{
-        margin-top: 0;
+        margin-top: 0px;
+        height: 220px;
+        width:350px;
     }
 
 }
