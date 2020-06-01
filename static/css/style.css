@@ -71,11 +71,6 @@
     height: 220px;
     width: 400px;
 }
-.carousel-inner{
-    margin-top: 20px;
-    height: 220px;
-    width:400px;
-}
 
 .carousel-control-prev, .carousel-control-next{
     background-color: transparent!important;
@@ -91,7 +86,7 @@
 }
     
 .projectdescription{
-    width: 90%;
+    width: 100%;
 }
 .contact-widget-section2{
     margin-bottom: 200px;
@@ -103,6 +98,9 @@
 
 .pagination li a{
     color: purple;
+}
+.carousel{
+    margin-left: 50px;
 }
 
 .maindiv{
@@ -243,16 +241,12 @@ form label{
         width: 240px;
     }
     .carousel{
+        margin-left: 30px;
         width: 350px;
     }
     .carousel-item img{
         height: 220px;
         width: 350px;
-    }
-    .carousel-inner{
-        margin-top: 0px;
-        height: 220px;
-        width:350px;
     }
 
 }
@@ -276,6 +270,9 @@ form label{
         margin-top: 60px;
         width: 220px;
     }
+    .carousel-item img{
+        width: 300px;
+    }
 }
 
 @media (max-width: 767px){
@@ -286,7 +283,6 @@ form label{
         height: 550px;
         width: 100%;
     }
-
     .navbar-light .navbar-nav .nav-link{
         font-size: 1rem;
     }
@@ -401,26 +397,24 @@ form label{
         margin-top: 130px;
     }
     .newcolumn{
-        margin-top: -370px;
+        margin-top: -340px;
     }
     .pagination{
         margin-bottom: 50px;
     }
     .carousel{
         align-items: center;
-        width: 300px;
-        margin: 0 auto 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .carousel-inner{
-        width: 300px;
-    }
-    .carousel-item{
+    .carousel-item img{
         width: 300px;
     }
     .carousel-item .d-block{
         height: 200px;
     }
     .projectjumbo{
+        height: 450px;
         padding-bottom: 0;
     }
     #myVideo{
@@ -557,19 +551,15 @@ form label{
     }
     .projectslide{
         margin-top: 70px;
-        margin-right: 50px;
-    }
-    .newprojectslide{
-        margin-right: 50px;
-    }
+    }   
     .pagination li a{
         font-size: 12px;
     }
-    .carousel-inner{
-        width: 350px;
+    .carousel{
+        margin-left: auto;
     }
-    .carousel-item{
-        width: 350px;
+    .carousel-item img{
+        width: 400px;
     }
     #myVideo{
         width: 350px;
@@ -624,7 +614,7 @@ form label{
         margin-top: 50px;
     }
     .newcolumn{
-        margin-top: -390px;
+        margin-top: -360px;
     }
     .newprojectslide{
         margin-top: 180px;
@@ -634,13 +624,10 @@ form label{
         float: left!important;
     }
     .carousel{
-        width: 350px;
+        margin-left: auto;
     }
-    .carousel-inner{
-        width: 350px;
-    }
-    .carousel-item{
-        width: 350px;
+    .carousel-item img{
+        width: 400px;
     }
     #myVideo{
         margin-top: 20px;
@@ -661,6 +648,9 @@ form label{
 @media (max-width: 520px){
     .maincontainer{
         height: 440px;
+    }
+    .projectjumbo{
+        height: 490px;
     }
     .mainheader h4{
         margin-top: 30px;
@@ -726,7 +716,7 @@ form label{
         margin-top: 70px;
     }
     .newcolumn{
-        margin-top: -390px;
+        margin-top: -370px;
     }
     .newprojectslide{
         margin-top: 200px;
@@ -750,9 +740,6 @@ form label{
     .contactheader p{
         font-size: 2.1rem;
     }
-    .carousel-inner{
-        width: 300px;
-    }
     .carousel-item img{
         width: 300px;
     }
@@ -765,6 +752,9 @@ form label{
 @media (max-width: 450px){
     .bottomfooter p{
         font-size: 0.75rem;
+    }
+    .projectjumbo{
+        height: 570px;
     }
     .bottomfooter .bd-highlight{
         font-size: 0.3rem;
@@ -795,7 +785,7 @@ form label{
         margin: 70px 20px auto auto;
     }
     .newcolumn{
-        margin-top: -410px;
+        margin-top: -380px;
     }
     .newprojectslide{
         margin-top: 180px;
@@ -838,6 +828,9 @@ form label{
 @media (max-width: 400px){
     .maincontainer{
         height: 380px;
+    }
+    .projectjumbo{
+        height: 480px;
     }
     .navbar-light .navbar-nav .nav-link{
         margin-right: 10px;
